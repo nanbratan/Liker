@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Auto_Like",
+    "version": "1.0",
+    "browser_action": {
+        "default_title": "Auto_Like",
+        "default_popup": "main.html"
+    },
+    "content_scripts": [
+        {
+          "matches": [ "*://*/*" ],
+          "js": [ "main.js" ]
+        }
+      ],
+    "permissions": [
+        "cookies",
+        "tabs",
+        "http://*/*", 
+        "https://*/*"
+    ]
+}
